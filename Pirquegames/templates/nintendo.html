@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>PirqueGames</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+
+    <h2>Pirque <span class="badge badge-secondary">Games</span></h2>
+    
+</head>
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a target="_blank" href="https://store.nintendo.cl/hollow-knight"a>
+        <img src="{% static 'img/HollowKnight.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"></a>
+          <h5>Hollow Knigth</h5>
+          <p>Plataforma, aventura</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a target="_blank" href="https://store.steampowered.com/app/381210/Dead_by_Daylight/?l=spanish"a>
+        <img src="{% static 'img/dead.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"></a>
+          <h5>dead by daylight</h5>
+          <p>suspenso, Horror</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a target="_blank" href="https://store.nintendo.cl/animal-crossing-new-horizons/?cid=L001-01:ch=pmpd"a></a>
+        <img src="{% static 'img/animal.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Animal Crossing</h5>
+          <p>Aventura, entretenimiento</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/index/"style="color:rgb(122, 233, 122)">Los Mejores Juegos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/PC/"style="color:rgb(122, 233, 122)">Pc</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="http://127.0.0.1:8000/Xbox/"style="color:rgb(122, 233, 122)">Xbox</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/Play_Station/"style="color:rgb(122, 233, 122)">PlayStation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Nintendo</a>
+          </li>
+      </ul>
+      <br>
+
+      <h1> <a name = juegosPc>Nintendo</a></h1>
+      <div class="card-columns">
+
+        <div class="card" style="width: 24rem;">
+            <img src="{% static 'img/dead.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dead by Daylight</h5>
+              <p class="card-text">Desde $5.450</p>
+              <a target="_blank" href="https://store.steampowered.com/app/381210/Dead_by_Daylight/?l=spanish" class="btn btn-primary">comprar</a>
+              
+            </div>
+        </div>
+    
+        <div class="card-columns">
+            <div class="card" style="width: 24rem;">
+                <img src="{% static 'img/animal.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">animal crossing new horizons</h5>
+                  <p class="card-text">Desde $59.990</p>
+                  <a target="_blank" href="https://store.nintendo.cl/animal-crossing-new-horizons/?cid=L001-01:ch=pmpd" class="btn btn-primary" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="card-columns">
+            <div class="card-columns">
+                <div class="card" style="width: 24rem;">
+                    <img src="{% static 'img/Mortal.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mortal Kombat 11</h5>
+                      <p class="card-text">Desde $36.990</p>
+                      <a target="_blank" href="https://www.nintendo.com/games/detail/mortal-kombat11-switch/" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-columns">
+            <div class="card" style="width: 24rem;">
+                <img src="{% static 'img/MarioKart8Deluxe.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mario MarioKart Deluxe</h5>
+                  <p class="card-text">Desde $59.990</p>
+                  <a target="_blank" href="https://store.nintendo.cl/mario-kart-8-deluxe" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            <div class="card" style="width: 24rem;">
+                <img src="{% static 'img/TheLegendofZelda.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Legend of Zelda</h5>
+                  <p class="card-text">Desde $59.990</p>
+                  <a target="_blank" href="https://store.nintendo.cl/the-legend-of-zelda-breath-of-the-wild" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            <div class="card" style="width: 24rem;">
+                <img src="{% static 'img/HollowKnight.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">hollow knight</h5>
+                  <p class="card-text">Desde $7.500</p>
+                  <a target="_blank" href="https://store.nintendo.cl/hollow-knight" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        
+
+        
+       
+        
+    </div>    
+      
+    <!--Footer-->
+    <footer class="site-footer">
+        <center>
+
+
+              <p>
+                <a target="_blank" href="https://www.twitter.com/" class="p-2"><span class="fa fa-twitter"></span></a>
+                <a target="_blank" href="https://www.instagram.com/" class="p-2"><span class="fa fa-instagram"></span></a>
+              </p> 
+          </center>
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |GC </a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
