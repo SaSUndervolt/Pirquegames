@@ -21,3 +21,4 @@ def xbox(request):
 
 def login(request):
     return render(request,'login.html')
+
